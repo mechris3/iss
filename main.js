@@ -61,6 +61,6 @@
     const map = new D3Map(topology)
     map.drawCountries()
     map.getIss()
-    setInterval(() => map.getIss(), 500)
+    setInterval(() => map.getIss(), 5000)
   })
 })()
