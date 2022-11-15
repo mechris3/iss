@@ -60,7 +60,8 @@
   }
   d3.json('world.topo.json').then((topology) => {
     const map = new D3Map(topology)
-    map.drawCountries()
+    map.drawCountries();
+	map.getIss();
     setInterval(() => map.getIss(), 50000)
   })
 })()
