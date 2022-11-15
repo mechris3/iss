@@ -45,7 +45,7 @@
 
     drawISS(position) {
       console.log('draw ISS', position)
-      const circleRadius = 1
+      const circleRadius = 3
       const ISSGroup = this.svg.append('g')
       ISSGroup.selectAll('circle')
         .data([position])
